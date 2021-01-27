@@ -1,0 +1,6 @@
+<div class="view">
+  <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+  <label class="title">{{todo.title}}</label>
+  <button class="btn btn-danger" (click)="removeTodo(todo)"><i class="fa fa-trash"></i></button>
+  <hr>
+</div>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+h1 {
+  color: #8f94b0;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.top-part {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #dfedf0;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+}
+.form-control{
+  flex-grow: 1;
+  display: inline-block;
+  width: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20px;
+  height: 40px;
+}
+.new-todo {
+  flex-grow: 1;
+  display: inline-block;
+  width: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #dfedf0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.todo-list {
+  margin: 0 auto;
+}
+
+hr {
+  width: 600px !important;
+}
+
+input[type=checkbox] {
+  transform: scale(1.7);
+  margin-right: 5%;
+}
+
+input[type=checkbox]:checked + label.title {
+  color: black;
+  text-decoration: line-through;
+}
+
+input:checked ~ .checkmark {
+  background-color: red;
+}
+
+.toggle {
+  text-decoration: line-through;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+.btn-light {
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 20%;
+  padding: 10px;
+}
+.btn-danger{
+  padding: 5px 10px 5px 10px;
+  font-size: large;
+  float: right;
+  display: inline;
+  vertical-align: middle;
+}
+.title {
+  font-size: large;
+}

@@ -1,0 +1,16 @@
+<div class="top-part">
+  <h1> My ToDo Application</h1>
+  <input class="form-control" placeholder="What do you need to do?" type="text" [(ngModel)]="newTodo.title"
+         (keyup.enter)="onAddTodo()" id="submit">
+  <button (click)="onAddTodo()" class="btn btn-light">Submit</button>
+</div>
+<section class="main">
+  <ul class="todo-list">
+    <li *ngFor="let todo of todos" [class.completed]="todo.complete">
+      <app-todo-list-item [todo]="todo"
+                          (toggleComplete)="onToggleTodoComplete($event)"
+                          (remove)="onRemoveTodo($event)">
+      </app-todo-list-item>
+    </li>
+  </ul>
+</section>
