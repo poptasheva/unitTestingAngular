@@ -1,8 +1,8 @@
 <div class="top-part">
-  <h1> My ToDo Application</h1>
+  <h4>Testing HTTP</h4>
   <input class="form-control" placeholder="What do you need to do?" type="text" [(ngModel)]="newTodo.title"
          (keyup.enter)="onAddTodo()" id="submit">
-  <button (click)="onAddTodo()" class="btn btn-light">Submit</button>
+  <button (click)="onAddTodo()" class="btn btn-dark">Submit</button>
 </div>
 <section class="main">
   <ul class="todo-list">
@@ -14,3 +14,8 @@
     </li>
   </ul>
 </section>
+<hr class="hrr"/>
+<div><h4>Testing pipes: </h4>
+  The length of the TODO's on pow is:
+  {{ todos.length | myPipe: 2}} </div>
+<hr class="hrr"/>

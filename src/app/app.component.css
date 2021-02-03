@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 h1 {
-  color: #8f94b0;
-  display: block;
+  color: black;
+  display: flex;
+  justify-content: center;
   font-family: 'Oswald', sans-serif;
+
 
 }
 
@@ -13,19 +15,15 @@ ul {
 
 .top-part {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  background-color: #dfedf0;
   width: 80%;
-  margin: 0 auto;
+
   margin-top: 50px;
 
 }
 .form-control{
-  flex-grow: 1;
   display: inline-block;
   width: 100%;
-  margin-left: 30%;
   margin-right: 30%;
   margin-top: 20px;
   height: 40px;
@@ -41,18 +39,19 @@ ul {
 
 .main {
   display: flex;
-  justify-content: center;
-  background-color: #dfedf0;
   width: 80%;
-  margin: 0 auto;
+
 }
 
 .todo-list {
-  margin: 0 auto;
+  margin-top: 50px;
 }
 
 hr {
   width: 600px !important;
+}
+.hrr{
+  width: 100% !important;
 }
 
 input[type=checkbox] {

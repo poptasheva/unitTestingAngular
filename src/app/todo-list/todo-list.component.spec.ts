@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { TodoListComponent } from './todo-list.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {TodoListComponent} from './todo-list.component';
+import {MyPipePipe} from '../myPipe.pipe';
 
 describe('TodoListComponent', () => {
   let component: TodoListComponent;
@@ -8,9 +8,9 @@ describe('TodoListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoListComponent ]
+      declarations: [TodoListComponent, MyPipePipe]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

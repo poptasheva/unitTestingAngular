@@ -1,0 +1,8 @@
+<div class="content shadow p-3 mb-5 rounded" role="main">
+  <app-todo-footer></app-todo-footer>
+  <app-login-form></app-login-form>
+  <app-test-hover-highlight></app-test-hover-highlight>
+  <app-todo-list (add)="addTodo($event)" [todos]="todos" (remove)="removeTodo($event)"
+                 (toggleComplete)="toggleTodoComplete($event)"></app-todo-list>
+
+</div>
